@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+    <link rel="stylesheet" href="assets/css/sidenav.css">
+    <link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
+
+</head>
+
+<body id="body-pd">
+
+    <header class="header" id="header">
+        <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-7"> <img src="assets/images/logo.png"></div>
+            </div>
+        </div>
+        <div class="header_img"> <img src="assets/images/logo_tata.png" alt=""> </div>
+    </header>
+    <div class="l-navbar" id="nav-bar">
+
+        <nav class="nav">
+
+            <div>
+                <!-- <a href="#" class="nav_logo"><img src="logo_tata.png"> </a> -->
+                <div class="nav_list"> <a href="#" class="nav_link active" title="Dashboard"> <i
+                            class='bx bx-grid-alt nav_icon'></i> <span class="nav_name" title="Edit">Dashboard</span>
+                    </a>
+                    <a href="#" class="nav_link" title="Profile"> <i class='bx bx-user nav_icon'></i> <span
+                            class="nav_name">Profile</span> </a>
+                    <a href="#" class="nav_link" title="Contact"> <i class='bx bx-phone nav_icon'></i> <span
+                            class="nav_name">Contact</span> </a>
+                    <a href="#" class="nav_link" title="Policy"> <i class='bx bx-badge nav_icon'></i> <span
+                            class="nav_name">Policy</span> </a>
+                    <a href="#" class="nav_link" title="Claim"> <i class='bx bx-folder nav_icon'></i> <span
+                            class="nav_name">Claim</span> </a>
+                    <a href="#" class="nav_link" title="Activities"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i>
+                        <span class="nav_name">Activities</span> </a>
+                    <a href="#" class="nav_link" title="Surveyor"> <i class='bx bx-user nav_icon'></i> <span
+                            class="nav_name">Surveyor</span> </a>
+                    <a href="#" class="nav_link" title="Document"> <i class='bx bx-phone nav_icon'></i> <span
+                            class="nav_name">Document</span> </a>
+                    <a href="#" class="nav_link" title="MIS Report"> <i class='bx bx-badge nav_icon'></i> <span
+                            class="nav_name">MIS Reports</span> </a>
+                    <a href="#" class="nav_link" title="Download"> <i class='bx bx-folder nav_icon'></i> <span
+                            class="nav_name">Downloads</span> </a>
+                    <a href="#" class="nav_link" title="Email"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i>
+                        <span class="nav_name">Email Integration</span> </a>
+                </div>
+
+            </div>
+            <!-- <a href="#" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">SignOut</span> </a> -->
+        </nav>
+    </div>
+
+
+    </div>
+
+    <!--Container Main start-->
+    <!-- <div class="height-100">
+              <br> -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-laravel">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">Claim Intimation</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link btn-primary" href="#">Submit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-primary mx-2" href="claim.html">Cancel</a>
+                    </li>
+                </ul>
+    
+            </div>
+
+        </div>
+    </nav>
+
+    <main class="login-form">
+        <div class="Container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">Details of Policy Holder</div>
+                        <div class="card-body">
+                            <form action="" method="">
+                                <div class=" row">
+                                    <div class="col-md-3 form-group">
+                                        <label>Insured Name</label>
+                                        <input type="text" id="Insured _Name" class="form-control" name="email-address"
+                                            required autofocus>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label>Phone Number</label>
+                                        <input type="text" id="email_address" class="form-control" name="email-address"
+                                            required autofocus>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label>Mobile Phone</label>
+                                        <input type="text" id="email_address" class="form-control" name="email-address"
+                                            required autofocus>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label>E-mail Id</label>
+                                        <input type="text" id="email_address" class="form-control" name="email-address"
+                                            required autofocus>
+                                    </div>
+                                </div>
+                                <div class=" row">
+                                    <div class="col-md-3 form-group">
+                                        <label>Organization</label>
+                                        <input type="text" id="Insured _Name" class="form-control" name="email-address"
+                                            required autofocus>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label>Policy Number</label>
+                                        <input type="text" id="email_address" class="form-control" name="email-address"
+                                            required autofocus>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label>Policy Start Date</label>
+                                        <input type="date" id="email_address" class="form-control" name="email-address"
+                                            required autofocus>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label>Policy End Date</label>
+                                        <input type="date" id="email_address" class="form-control" name="email-address"
+                                            required autofocus>
+                                    </div>
+                                </div>
+                                <div class=" row">
+                                    <div class="col-md-3 form-group">
+                                        <label>Policy Year</label>
+                                        <input type="text" id="Insured _Name" class="form-control" name="email-address"
+                                            required autofocus>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label>Policy Type</label>
+                                        <input type="text" id="email_address" class="form-control" name="email-address"
+                                            required autofocus>
+                                    </div>
+                                    
+                                </div>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+<!-- -------------------------------- -->
+        <div class="Container mt-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">Details of Vehicle</div>
+                        <div class="card-body">
+                            <form action="" method="">
+                                <div class=" row">
+                                    <div class="col-md-3 form-group">
+                                        <label>Registration number</label>
+                                        <input type="text" id="Insured _Name" class="form-control" name="email-address"
+                                            required autofocus>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label>Make</label>
+                                        <input type="text" id="email_address" class="form-control" name="email-address"
+                                            required autofocus>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label>Model</label>
+                                        <input type="text" id="Insured _Name" class="form-control" name="email-address"
+                                            required autofocus>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label>Date of Registration</label>
+                                        <input type="text" id="email_address" class="form-control" name="email-address"
+                                            required autofocus>
+                                    </div>
+                                </div>
+                               
+                               
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- ---------------------------------- -->
+        <div class="Container mt-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">Details of Incident (Accident / Theft)</div>
+                        <div class="card-body">
+                            <form action="" method="">
+                                <div class=" row">
+                                    <div class="col-md-3 form-group">
+                                        <label>Type of Loss</label>
+                                        <input type="text" id="Insured _Name" class="form-control" name="email-address"
+                                            required autofocus>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label>Nature / Cause of Loss</label>
+                                        <input type="text" id="email_address" class="form-control" name="email-address"
+                                            required autofocus>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label>Date and Time of Loss</label>
+                                        <input type="text" id="email_address" class="form-control" name="email-address"
+                                            required autofocus>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label>Loss Location</label>
+                                        <input type="text" id="email_address" class="form-control" name="email-address"
+                                            required autofocus>
+                                    </div>
+                                </div>
+                                <div class=" row">
+                                    <div class="col-md-3 form-group">
+                                        <label>Loss Description</label>
+                                        <input type="text" id="Insured _Name" class="form-control" name="email-address"
+                                            required autofocus>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label>Loss Estimation</label>
+                                        <input type="text" id="email_address" class="form-control" name="email-address"
+                                            required autofocus>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label>TMIBASL Branch Name</label>
+                                        <input type="date" id="email_address" class="form-control" name="email-address"
+                                            required autofocus>
+                              </div>
+                                   
+                                </div>
+                                
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- -------------------------------- -->
+       
+        <!-- ---------------------------------- -->
+        <div class="Container mt-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">Details of Driver</div>
+                        <div class="card-body">
+                            <form action="" method="">
+                                <div class=" row">
+                                    <div class="col-md-3 form-group">
+                                        <label>Name</label>
+                                        <input type="text" id="Insured _Name" class="form-control" name="email-address"
+                                            required autofocus>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label>Relation with Insured</label>
+                                        <input type="text" id="email_address" class="form-control" name="email-address"
+                                            required autofocus>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label>Address</label>
+                                        <input type="text" id="email_address" class="form-control" name="email-address"
+                                            required autofocus>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label>Contact number</label>
+                                        <input type="text" id="email_address" class="form-control" name="email-address"
+                                            required autofocus>
+                                    </div>
+                                </div>
+                                <div class=" row">
+                                    <div class="col-md-3 form-group">
+                                        <label>Gender (Male / Female)</label>
+                                        <input type="text" id="Insured _Name" class="form-control" name="email-address"
+                                            required autofocus>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label>Driving License No</label>
+                                        <input type="text" id="email_address" class="form-control" name="email-address"
+                                            required autofocus>
+                                    </div>
+                                    <!-- <div class="col-md-3 form-group">
+                                        <label>TMIBASL Branch Name</label>
+                                        <input type="date" id="email_address" class="form-control" name="email-address"
+                                            required autofocus>
+                              </div> -->
+                                   
+                                </div>
+                                
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+<!-- </div> -->
+<!--Container Main end-->
+<script src="assets/js/sidenav.js"></script>
+</body2>
+</body>
+
+</html>

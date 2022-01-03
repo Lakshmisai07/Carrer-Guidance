@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claim</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+  <link rel="stylesheet" href="assets/css/sidenav.css">
+  <link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
+ 
+
+</head>
+
+<body id="body-pd">
+
+  <header class="header" id="header">
+    <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-7"> <img src="assets/images/logo.png"></div>
+      </div>
+    </div>
+    <div class="header_img"> <img src="assets/images/logo_tata.png" alt=""> </div>
+  </header>
+  <div class="l-navbar" id="nav-bar">
+
+    <nav class="nav">
+
+      <div>
+        <!-- <a href="#" class="nav_logo"><img src="logo_tata.png"> </a> -->
+        <div class="nav_list"> <a href="#" class="nav_link active" title="Dashboard"> <i
+              class='bx bx-grid-alt nav_icon'></i> <span class="nav_name" title="Edit">Dashboard</span> </a>
+          <a href="profile.html" class="nav_link" title="Profile"> <i class='bx bx-user nav_icon'></i> <span
+              class="nav_name">Profile</span> </a>
+          <a href="#" class="nav_link" title="Contact"> <i class='bx bx-phone nav_icon'></i> <span
+              class="nav_name">Contact</span> </a>
+          <a href="policy.html" class="nav_link" title="Policy"> <i class='bx bx-badge nav_icon'></i> <span
+              class="nav_name">Policy</span> </a>
+          <a href="#" class="nav_link" title="Claim"> <i class='bx bx-folder nav_icon'></i> <span
+              class="nav_name">Claim</span> </a>
+          <a href="#" class="nav_link" title="Activities"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i>
+            <span class="nav_name">Activities</span> </a>
+          <a href="#" class="nav_link" title="Surveyor"> <i class='bx bx-user nav_icon'></i> <span
+              class="nav_name">Surveyor</span> </a>
+          <a href="#" class="nav_link" title="Document"> <i class='bx bx-phone nav_icon'></i> <span
+              class="nav_name">Document</span> </a>
+          <a href="#" class="nav_link" title="MIS Report"> <i class='bx bx-badge nav_icon'></i> <span
+              class="nav_name">MIS Reports</span> </a>
+          <a href="#" class="nav_link" title="Download"> <i class='bx bx-folder nav_icon'></i> <span
+              class="nav_name">Downloads</span> </a>
+          <a href="#" class="nav_link" title="Email"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i>
+            <span class="nav_name">Email Integration</span> </a>
+        </div>
+
+      </div>
+      <!-- <a href="#" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">SignOut</span> </a> -->
+    </nav>
+  </div>
+
+
+  <!--Container Main start-->
+  <!-- <div class="height-100 bg-light"> -->
+  <section class="contact-area ptb-100" style="margin-top: 80px;">
+    <div class="container-fluid">
+      <div class="table-responsive">
+        <div class="table-wrapper">
+          <div class="table-title">
+            <div class="row">
+              <div class="col-sm-9">
+                <h2><b>Claim Details</b></h2>
+
+              </div>
+              <div class="col-sm-3">
+                <a href="createclaim.html"><button type=button class="btn btn-info"><b>Create Claim Request</b></button></a>
+                                </div>
+            </div>
+          </div>
+          <!-- <div class="row">
+                          <div class="col-sm-9">
+                              <h2 class="text-center"></h2>
+                          </div>
+                          <div class="col-sm-3">
+                            <input class="form-control w-75 mx-5" id="myInput" type="text" placeholder="Search..">
+                          </div>
+                      </div>
+                  </div> -->
+
+         
+          <table id="example" class="table table-striped table-hover">
+            <!-- <div class="container">
+              <div class="row">
+                <div class="col-md-11">
+                  <a href=""><button type=button class="btn btn-info">Create claim request<i class="fa fa-plus mx-2"></i></button></a>
+                </div>
+              </div>
+            </div> -->
+            <thead>
+              <tr>
+                <th>S.No</th>
+                <th>Policy Number</th>
+                <th>Insured Name</th>
+                <th>Date of Registration</th>
+                <th>Type of Loss</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>12345</td>
+                <td> John Doe</td>
+                <td>20-07-2020</td>
+                <td>Direct Loss</td>
+                <td><span class="status text-success">&bull;</span> Active</td>
+                <td>
+                  <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                  <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i
+                      class="material-icons">&#xE872;</i></a>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>12346</td>
+                <td> John Doe</td>
+                <td>06-09-2021</td>
+                <td>Indirect Loss</td>
+                <td><span class="status text-success">&bull;</span> Active</td>
+                <td>
+                  <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                  <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i
+                      class="material-icons">&#xE872;</i></a>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>12347</td>
+                <td>Doe</td>
+                <td>06-09-2021</td>
+                <td>Direct Loss</td>
+                <td><span class="status text-danger">&bull;</span> Suspended</td>
+                <td>
+                  <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                  <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i
+                      class="material-icons">&#xE872;</i></a>
+                </td>
+              </tr>
+              <tr>
+
+                <td>4</td>
+                <td>12348</td>
+                <td>John Doe</td>
+                <td>06-09-2021</td>
+                <td>Direct Loss</td>
+                <td><span class="status text-success">&bull;</span> Active</td>
+                <td>
+                  <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                  <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i
+                      class="material-icons">&#xE872;</i></a>
+                </td>
+              </tr>
+              <tr>
+
+                <td>5</td>
+                <td>12349</td>
+                <td> Ruben</td>
+                <td>06-09-2021</td>
+                <td>Indirect Loss</td>
+                <td><span class="status text-warning">&bull;</span> Inactive</td>
+                <td>
+                  <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                  <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i
+                      class="material-icons">&#xE872;</i></a>
+
+                </td>
+              </tr>
+
+          </table>
+
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  <!-- <div cass="Container">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div> -->
+  <!-- </div> -->
+  <!--Container Main end-->
+
+
+  <script>
+    $(function () {
+      $(document).ready(function () {
+        $('#example').DataTable();
+      });
+    });
+  </script>
+  <script src="assets/js/sidenav.js"></script>
+</body>
+
+</html>

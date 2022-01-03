@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+  <link rel="stylesheet" href="assets/css/sidenav.css">
+
+</head>
+
+<body id="body-pd">
+
+  <header class="header" id="header">
+    <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-7"> <img src="assets/images/logo.png"></div>
+      </div>
+    </div>
+    <div class="header_img"> <img src="assets/images/logo_tata.png" alt=""> </div>
+  </header>
+  <div class="l-navbar" id="nav-bar">
+
+    <nav class="nav">
+
+      <div>
+        <!-- <a href="#" class="nav_logo"><img src="logo_tata.png"> </a> -->
+        <div class="nav_list"> <a href="#" class="nav_link active" title="Dashboard"> <i
+              class='bx bx-grid-alt nav_icon'></i> <span class="nav_name" title="Edit">Dashboard</span> </a>
+          <a href="profile.html" class="nav_link" title="Profile"> <i class='bx bx-user nav_icon'></i> <span
+              class="nav_name">Profile</span> </a>
+          <a href="#" class="nav_link" title="Contact"> <i class='bx bx-phone nav_icon'></i> <span
+              class="nav_name">Contact</span> </a>
+          <a href="policy.html" class="nav_link" title="Policy"> <i class='bx bx-badge nav_icon'></i> <span
+              class="nav_name">Policy</span> </a>
+          <a href="#" class="nav_link" title="Claim"> <i class='bx bx-folder nav_icon'></i> <span
+              class="nav_name">Claim</span> </a>
+          <a href="#" class="nav_link" title="Activities"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i>
+            <span class="nav_name">Activities</span> </a>
+          <a href="#" class="nav_link" title="Surveyor"> <i class='bx bx-user nav_icon'></i> <span
+              class="nav_name">Surveyor</span> </a>
+          <a href="#" class="nav_link" title="Document"> <i class='bx bx-phone nav_icon'></i> <span
+              class="nav_name">Document</span> </a>
+          <a href="#" class="nav_link" title="MIS Report"> <i class='bx bx-badge nav_icon'></i> <span
+              class="nav_name">MIS Reports</span> </a>
+          <a href="#" class="nav_link" title="Download"> <i class='bx bx-folder nav_icon'></i> <span
+              class="nav_name">Downloads</span> </a>
+          <a href="#" class="nav_link" title="Email"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i>
+            <span class="nav_name">Email Integration</span> </a>
+        </div>
+
+      </div>
+      <!-- <a href="#" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">SignOut</span> </a> -->
+    </nav>
+  </div>
+
+
+  </div>
+
+  <!--Container Main start-->
+  <!-- <div class="height-100"> -->
+  <div class="container-fluid">
+    <div class="row py-5 px-4">
+      <div class="col-lg-12  col-md-6 mx-auto">
+        <!-- Profile widget -->
+        <div class="bg-white shadow rounded overflow-hidden">
+          <div class="px-4 pt-0 pb-4 cover">
+            <div class="media align-items-end profile-head">
+              <div class="profile mr-3"><img
+                  src="assets/images/profile.jpg"
+                  alt="..." width="130" class="rounded mb-2 img-thumbnail">
+                <div class="middle">
+                  <input type="button" class="btn btn-primary" id="btnChangePicture" value="Change Photo"
+                    style=" width: 95%;" />
+                  <input type="file" style="display: none;" id="profilePicture" name="file" />
+                </div>
+              </div>
+              <div class="media-body mb-5 text-white">
+                <h4 class="mt-0 mb-0">Mark Williams</h4>
+                <p class="small mb-4"> <i class="fa fa-map-marker mr-2"></i>New York
+                  <br> <i class="fa fa-phone mr-2"></i>+79110018830<br><i
+                    class="fa fa-envelope mr-2"></i>William@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-light p-4 d-flex justify-content-end text-center">
+            </div>
+                
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-12" id="editprofile">
+                        <i class="fa fa-ellipsis-h" onclick="openForm()"></i>
+                      </div>
+                    </div>
+                  <!-- <form id="MyForm" action="" method="post">
+                    <label>Mobile Number</label>
+                  <input type="text" name="name" class="form-control" placeholder="Enter your Mobile Number"/><br>
+                   <div class="row">
+                     <div class="col-md-3">
+                      <input type="button" class="btn btn-primary" name="submit" value="Submit"/>
+                      </div>
+                      <div class="col-md-3">
+                      <input type="button" class="btn btn-secondary" name="submit" value="Cancel"/>
+                     </div>
+                   </div>
+                    
+                </form> -->
+                <div class="form-popup" id="myForm">
+                  <form action="" class="form-container">
+                    <!-- <h1></h1> -->
+                
+                    <label for="email"><b>Mobile Number</b></label>
+                    <input type="text" placeholder="Enter Mobile Number" name="mobilenumber" required>
+                
+                   
+                    <button type="submit" class="btn">Save</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+                  </form>
+                </div>
+              </div>
+                
+        <div class="px-4 py-3">
+          <div class="card-body">
+            <table class="table table-striped">
+              <tbody>
+                <tr>
+                  <td><em class="ion-document-text icon-fw mr"></em>Name</td>
+                  <td class="ng-binding">Mark Williams</td>
+                </tr>
+                <tr>
+                  <td><em class="ion-ios-telephone icon-fw mr"></em>Mobile Number</td>
+                  <td><span class="ng-scope ng-binding editable">13-123-46578</span></td>
+                </tr>
+                <tr>
+                  <td><em class="ion-email icon-fw mr"></em>Email</td>
+                  <td><span class="ng-scope editable"><a href="" class="ng-binding">William@gmail.com</a></span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>  
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        
+
+
+  <!-- </div> -->
+  <!--Container Main end-->
+<script src="assets/js/sidenav.js"></script>
+  
+
+  <script>
+    $(document).ready(function () {
+      $imgSrc = $('#imgProfile').attr('src');
+
+      function readURL(input) {
+
+        if (input.files && input.files[0]) {
+          var reader = new FileReader();
+
+          reader.onload = function (e) {
+            $('#imgProfile').attr('src', e.target.result);
+          };
+
+          reader.readAsDataURL(input.files[0]);
+        }
+      }
+      $('#btnChangePicture').on('click', function () {
+        // document.getElementById('profilePicture').click();
+        if (!$('#btnChangePicture').hasClass('changing')) {
+          $('#profilePicture').click();
+        } else {
+          // change
+        }
+      });
+      $('#profilePicture').on('change', function () {
+        readURL(this);
+        $('#btnChangePicture').addClass('changing');
+        $('#btnChangePicture').attr('value', 'Confirm');
+        $('#btnDiscard').removeClass('d-none');
+        // $('#imgProfile').attr('src', '');
+      });
+      $('#btnDiscard').on('click', function () {
+        // if ($('#btnDiscard').hasClass('d-none')) {
+        $('#btnChangePicture').removeClass('changing');
+        $('#btnChangePicture').attr('value', 'Change');
+        $('#btnDiscard').addClass('d-none');
+        $('#imgProfile').attr('src', $imgSrc);
+        $('#profilePicture').val('');
+        // }
+      });
+    });
+  </script>
+
+
+  <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+</body>
+
+</html>
